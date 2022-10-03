@@ -1,0 +1,3158 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook original-version='18.1' source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='combined (number of words and pages)' inline='true' name='federated.0oil2rx1dmjr2b1auqtrk1xl65js' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='number of words and pages' name='excel-direct.1xy1b5o0d2m1ak1eu17ns1rmr1z0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Jeremy Chia/Desktop/2022/Research/Code/1. Number of words and pages/number of words and pages.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1xy1b5o0d2m1ak1eu17ns1rmr1z0' name='combined' table='[combined$]' type='table'>
+          <columns gridOrigin='A1:D201:no:A1:D201:0' header='yes' outcome='6'>
+            <column datatype='string' name='Company' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='words' ordinal='2' />
+            <column datatype='integer' name='pages' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1xy1b5o0d2m1ak1eu17ns1rmr1z0' name='combined' table='[combined$]' type='table'>
+          <columns gridOrigin='A1:D201:no:A1:D201:0' header='yes' outcome='6'>
+            <column datatype='string' name='Company' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='words' ordinal='2' />
+            <column datatype='integer' name='pages' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[combined]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D201:no:A1:D201:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[combined]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_A741685353C946779A6F227A7C4E5DC1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[combined]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_A741685353C946779A6F227A7C4E5DC1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>words</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[words]</local-name>
+            <parent-name>[combined]</parent-name>
+            <remote-alias>words</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_A741685353C946779A6F227A7C4E5DC1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[combined]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_A741685353C946779A6F227A7C4E5DC1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Company (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Company]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;CITY DEVELOPMENTS LIMITED&quot;'>
+            <value>&quot;CITY DEVELOPMENTS LIMITED&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;'>
+            <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;JARDINE MATHESON HLDGS LTD&quot;'>
+            <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;KEPPEL CORPORATION LIMITED&quot;'>
+            <value>&quot;KEPPEL CORPORATION LIMITED&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;THAI BEVERAGE PUBLIC CO LTD&quot;'>
+            <value>&quot;THAI BEVERAGE PUBLIC CO LTD&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='combined' datatype='table' name='[__tableau_internal_object_id__].[combined_A741685353C946779A6F227A7C4E5DC1]' role='measure' type='quantitative' />
+      <column caption='Pages' datatype='integer' name='[pages]' role='measure' type='quantitative' />
+      <column caption='Words' datatype='integer' name='[words]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Company (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CITY DEVELOPMENTS LIMITED&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SATS LTD.&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;KEPPEL CORPORATION LIMITED&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JARDINE MATHESON HLDGS LTD&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;THAI BEVERAGE PUBLIC CO LTD&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Company' />
+        <field-sort-custom-order field='Calculation_311592814683545600' />
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='words' />
+        <field-sort-custom-order field='pages' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='combined' id='combined_A741685353C946779A6F227A7C4E5DC1'>
+            <properties context=''>
+              <relation connection='excel-direct.1xy1b5o0d2m1ak1eu17ns1rmr1z0' name='combined' table='[combined$]' type='table'>
+                <columns gridOrigin='A1:D201:no:A1:D201:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Company' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='words' ordinal='2' />
+                  <column datatype='integer' name='pages' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined (number of words and pages)' name='federated.0oil2rx1dmjr2b1auqtrk1xl65js' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oil2rx1dmjr2b1auqtrk1xl65js'>
+            <column datatype='string' name='[Company (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Company]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;CITY DEVELOPMENTS LIMITED&quot;'>
+                  <value>&quot;CITY DEVELOPMENTS LIMITED&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;'>
+                  <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;JARDINE MATHESON HLDGS LTD&quot;'>
+                  <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;KEPPEL CORPORATION LIMITED&quot;'>
+                  <value>&quot;KEPPEL CORPORATION LIMITED&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;THAI BEVERAGE PUBLIC CO LTD&quot;'>
+                  <value>&quot;THAI BEVERAGE PUBLIC CO LTD&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column caption='Pages' datatype='integer' name='[pages]' role='measure' type='quantitative' />
+            <column-instance column='[pages]' derivation='Sum' name='[sum:pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[words]' derivation='Sum' name='[sum:words:qk]' pivot='key' type='quantitative' />
+            <column caption='Words' datatype='integer' name='[words]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]' />
+              <lod column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]' />
+              <lod column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.66966849565505981' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</rows>
+        <cols>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</cols>
+      </table>
+      <simple-id uuid='{26AB605D-2A23-4E42-80C9-F730E49DB299}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined (number of words and pages)' name='federated.0oil2rx1dmjr2b1auqtrk1xl65js' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oil2rx1dmjr2b1auqtrk1xl65js'>
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column caption='Pages' datatype='integer' name='[pages]' role='measure' type='quantitative' />
+            <column-instance column='[pages]' derivation='Sum' name='[sum:pages:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[words]' derivation='Sum' name='[sum:words:qk]' pivot='key' type='quantitative' />
+            <column caption='Words' datatype='integer' name='[words]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]' />
+              <lod column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='true' fit='linear' />
+            <reference-line axis-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline0' label-type='none' paired-distribution-id='refline1' probability='95' scope='per-pane' show-lines='both' symmetric='false' value-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]' enable-instant-analytics='true' formula='median' id='refline1' label-type='automatic' paired-distribution-id='refline0' probability='95' scope='per-pane' value-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='medianconfidence' id='refline2' label-type='none' paired-distribution-id='refline3' probability='95' scope='per-pane' show-lines='both' symmetric='false' value-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]' enable-instant-analytics='true' formula='median' id='refline3' label-type='automatic' paired-distribution-id='refline2' probability='95' scope='per-pane' value-column='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]' z-order='4' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.66966849565505981' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</rows>
+        <cols>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</cols>
+      </table>
+      <simple-id uuid='{76129222-0D54-4617-BAF9-AAF486E71463}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='254'>
+            <card pane-specification-id='0' param='[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;YANGZIJIANG SHIPBLDG HLDGS LTD&quot;</value>
+                <value>2020</value>
+                <value>36</value>
+                <value>8857</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;YANGZIJIANG SHIPBLDG HLDGS LTD&quot;</value>
+                <value>2018</value>
+                <value>3</value>
+                <value>1117</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;YANGZIJIANG SHIPBLDG HLDGS LTD&quot;</value>
+                <value>2017</value>
+                <value>5</value>
+                <value>3495</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;YANGZIJIANG SHIPBLDG HLDGS LTD&quot;</value>
+                <value>2016</value>
+                <value>4</value>
+                <value>2244</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;YANGZIJIANG SHIPBLDG HLDGS LTD&quot;</value>
+                <value>2015</value>
+                <value>4</value>
+                <value>1827</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;VENTURE CORPORATION LIMITED&quot;</value>
+                <value>2021</value>
+                <value>34</value>
+                <value>11680</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;VENTURE CORPORATION LIMITED&quot;</value>
+                <value>2019</value>
+                <value>33</value>
+                <value>9817</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;VENTURE CORPORATION LIMITED&quot;</value>
+                <value>2018</value>
+                <value>30</value>
+                <value>5695</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;VENTURE CORPORATION LIMITED&quot;</value>
+                <value>2017</value>
+                <value>24</value>
+                <value>6499</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;UOL GROUP LIMITED&quot;</value>
+                <value>2016</value>
+                <value>28</value>
+                <value>9999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;UNITED OVERSEAS BANK LTD&quot;</value>
+                <value>2017</value>
+                <value>33</value>
+                <value>12448</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;UNITED OVERSEAS BANK LTD&quot;</value>
+                <value>2016</value>
+                <value>20</value>
+                <value>8781</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;UNITED OVERSEAS BANK LTD&quot;</value>
+                <value>2015</value>
+                <value>18</value>
+                <value>7135</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE TECH ENGINEERING LTD&quot;</value>
+                <value>2019</value>
+                <value>24</value>
+                <value>7571</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE TECH ENGINEERING LTD&quot;</value>
+                <value>2018</value>
+                <value>16</value>
+                <value>4861</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE TECH ENGINEERING LTD&quot;</value>
+                <value>2017</value>
+                <value>17</value>
+                <value>5181</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE TECH ENGINEERING LTD&quot;</value>
+                <value>2016</value>
+                <value>17</value>
+                <value>4492</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE TECH ENGINEERING LTD&quot;</value>
+                <value>2015</value>
+                <value>19</value>
+                <value>6782</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2020</value>
+                <value>14</value>
+                <value>7523</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2019</value>
+                <value>12</value>
+                <value>5907</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2018</value>
+                <value>12</value>
+                <value>5506</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2017</value>
+                <value>12</value>
+                <value>5183</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2016</value>
+                <value>11</value>
+                <value>4394</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SINGAPORE EXCHANGE LIMITED&quot;</value>
+                <value>2015</value>
+                <value>4</value>
+                <value>1426</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SEMBCORP INDUSTRIES LTD&quot;</value>
+                <value>2021</value>
+                <value>10</value>
+                <value>11155</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SEMBCORP INDUSTRIES LTD&quot;</value>
+                <value>2020</value>
+                <value>10</value>
+                <value>10060</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SEMBCORP INDUSTRIES LTD&quot;</value>
+                <value>2015</value>
+                <value>15</value>
+                <value>13136</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SATS LTD.&quot;</value>
+                <value>2016</value>
+                <value>1</value>
+                <value>773</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;SATS LTD.&quot;</value>
+                <value>2015</value>
+                <value>2</value>
+                <value>971</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;OVERSEA-CHINESE BANKING CORP&quot;</value>
+                <value>2018</value>
+                <value>18</value>
+                <value>13156</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;OVERSEA-CHINESE BANKING CORP&quot;</value>
+                <value>2017</value>
+                <value>12</value>
+                <value>7908</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;OVERSEA-CHINESE BANKING CORP&quot;</value>
+                <value>2016</value>
+                <value>9</value>
+                <value>2352</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;OVERSEA-CHINESE BANKING CORP&quot;</value>
+                <value>2015</value>
+                <value>7</value>
+                <value>2935</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2021</value>
+                <value>27</value>
+                <value>12654</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2020</value>
+                <value>19</value>
+                <value>9907</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2019</value>
+                <value>15</value>
+                <value>8234</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2018</value>
+                <value>15</value>
+                <value>7033</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2017</value>
+                <value>8</value>
+                <value>4095</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2016</value>
+                <value>3</value>
+                <value>1503</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE LOGISTICS TRUST&quot;</value>
+                <value>2015</value>
+                <value>2</value>
+                <value>1440</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2020</value>
+                <value>36</value>
+                <value>12989</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2019</value>
+                <value>24</value>
+                <value>9624</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2018</value>
+                <value>24</value>
+                <value>7894</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2017</value>
+                <value>16</value>
+                <value>5912</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2016</value>
+                <value>14</value>
+                <value>13571</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE INDUSTRIAL TRUST&quot;</value>
+                <value>2015</value>
+                <value>10</value>
+                <value>10927</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2021</value>
+                <value>31</value>
+                <value>13325</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2020</value>
+                <value>24</value>
+                <value>10875</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2019</value>
+                <value>18</value>
+                <value>9302</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2018</value>
+                <value>16</value>
+                <value>6908</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2017</value>
+                <value>8</value>
+                <value>4204</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2016</value>
+                <value>4</value>
+                <value>2322</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;MAPLETREE COMMERCIAL TRUST&quot;</value>
+                <value>2015</value>
+                <value>4</value>
+                <value>2148</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2020</value>
+                <value>23</value>
+                <value>11791</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2019</value>
+                <value>19</value>
+                <value>9437</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2018</value>
+                <value>21</value>
+                <value>9194</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2017</value>
+                <value>16</value>
+                <value>7973</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2016</value>
+                <value>20</value>
+                <value>7277</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;KEPPEL DC REIT&quot;</value>
+                <value>2015</value>
+                <value>4</value>
+                <value>1393</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;JARDINE CYCLE &amp; CARRIAGE LTD&quot;</value>
+                <value>2019</value>
+                <value>35</value>
+                <value>11709</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;JARDINE CYCLE &amp; CARRIAGE LTD&quot;</value>
+                <value>2016</value>
+                <value>1</value>
+                <value>1172</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;JARDINE CYCLE &amp; CARRIAGE LTD&quot;</value>
+                <value>2015</value>
+                <value>1</value>
+                <value>1284</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;HONGKONG LAND HOLDINGS LIMITED&quot;</value>
+                <value>2018</value>
+                <value>22</value>
+                <value>12422</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;HONGKONG LAND HOLDINGS LIMITED&quot;</value>
+                <value>2017</value>
+                <value>16</value>
+                <value>6722</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;HONGKONG LAND HOLDINGS LIMITED&quot;</value>
+                <value>2016</value>
+                <value>14</value>
+                <value>6358</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;HONGKONG LAND HOLDINGS LIMITED&quot;</value>
+                <value>2015</value>
+                <value>17</value>
+                <value>7113</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;FRASERS LOGISTICS &amp; COMMERCIAL TRUST&quot;</value>
+                <value>2019</value>
+                <value>23</value>
+                <value>7402</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;FRASERS LOGISTICS &amp; COMMERCIAL TRUST&quot;</value>
+                <value>2018</value>
+                <value>27</value>
+                <value>8962</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;FRASERS LOGISTICS &amp; COMMERCIAL TRUST&quot;</value>
+                <value>2017</value>
+                <value>23</value>
+                <value>6576</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;DBS GROUP HOLDINGS LTD&quot;</value>
+                <value>2017</value>
+                <value>11</value>
+                <value>7018</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;DBS GROUP HOLDINGS LTD&quot;</value>
+                <value>2016</value>
+                <value>12</value>
+                <value>6684</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;DBS GROUP HOLDINGS LTD&quot;</value>
+                <value>2015</value>
+                <value>4</value>
+                <value>2064</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;CAPITALAND INTEGRATED COMM TR&quot;</value>
+                <value>2019</value>
+                <value>26</value>
+                <value>11178</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;CAPITALAND INTEGRATED COMM TR&quot;</value>
+                <value>2018</value>
+                <value>25</value>
+                <value>10235</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;CAPITALAND INTEGRATED COMM TR&quot;</value>
+                <value>2017</value>
+                <value>24</value>
+                <value>9626</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;CAPITALAND INTEGRATED COMM TR&quot;</value>
+                <value>2016</value>
+                <value>20</value>
+                <value>9573</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;CAPITALAND INTEGRATED COMM TR&quot;</value>
+                <value>2015</value>
+                <value>9</value>
+                <value>4336</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;ASCENDAS REAL ESTATE INV TRUST&quot;</value>
+                <value>2016</value>
+                <value>36</value>
+                <value>10420</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;ASCENDAS REAL ESTATE INV TRUST&quot;</value>
+                <value>2015</value>
+                <value>32</value>
+                <value>11095</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2021</value>
+                <value>6</value>
+                <value>1552</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2020</value>
+                <value>12</value>
+                <value>5975</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2019</value>
+                <value>2</value>
+                <value>1360</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2018</value>
+                <value>2</value>
+                <value>825</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2017</value>
+                <value>2</value>
+                <value>863</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2016</value>
+                <value>2</value>
+                <value>888</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>&quot;JARDINE MATHESON HLDGS LTD&quot;</value>
+                <value>2015</value>
+                <value>2</value>
+                <value>923</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2021</value>
+                <value>2</value>
+                <value>1185</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2020</value>
+                <value>4</value>
+                <value>1810</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2019</value>
+                <value>4</value>
+                <value>1506</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2018</value>
+                <value>2</value>
+                <value>790</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2017</value>
+                <value>2</value>
+                <value>652</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2016</value>
+                <value>2</value>
+                <value>790</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Company:nk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:pages:qk]</field>
+                  <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[sum:words:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>&quot;DAIRY FARM INT&apos;L HOLDINGS LTD&quot;</value>
+                <value>2015</value>
+                <value>1</value>
+                <value>280</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+            <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A517D5C-159F-407B-8046-AF5FA7B27125}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[Company (group)]</field>
+            <field>[federated.0oil2rx1dmjr2b1auqtrk1xl65js].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AD525BF9-28FC-4941-92CB-1326155D21EE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1 (2)' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

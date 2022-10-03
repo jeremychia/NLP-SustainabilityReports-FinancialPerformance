@@ -133,7 +133,7 @@ write.csv(result,"metrics_v3.csv")
 FindTopicsNumber_plot(result)
 
 # number of topics
-K <- 9
+K <- 11
 # set random number generator seed
 set.seed(1234)
 # compute the LDA model, inference via 1000 iterations of Gibbs sampling
