@@ -57,7 +57,12 @@ text_tokenised <- text_df %>%
 
 ## Counting Number of Words
 
-setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/4. Sentiment Analysis")
+
+setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/1. Number of words and pages")
+
+write.csv(text_tokenised %>% 
+  group_by(Company,Year,page) %>% 
+  count(), "number_words_per_page.csv", row.names = F)
 
 write.csv(text_tokenised %>% 
   group_by(Company,Year) %>% 
@@ -79,7 +84,9 @@ text_tokenised %>%
   theme(legend.position="none")
 
 ## Exploring Sentiments
-
+  
+setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/4. Sentiment Analysis")
+  
 get_sentiments("afinn")
 get_sentiments("nrc")
 get_sentiments("bing")
@@ -141,3 +148,86 @@ jockers <- text_tokenised %>%
   mutate(method = "Jockers")
 
 summary((jockers %>% group_by(Company, Year))$sentiment)
+
+sentiments <- afinn %>% 
+  mutate(afinn = sentiment) %>% 
+  select(-c(sentiment,method)) %>% 
+left_join(
+  bing %>% 
+    mutate(bing = sentiment) %>% 
+    select(-c(positive,negative,sentiment))
+  ) %>% 
+left_join(
+  nrc %>% 
+    mutate(nrc = sentiment) %>% 
+    select(-c(positive,negative,sentiment))
+) %>% 
+left_join(
+  loughran %>% 
+    mutate(loughran = sentiment) %>% 
+    select(-c(positive,negative,sentiment))
+) %>% 
+left_join(
+  jockers %>% 
+    mutate(jockers = sentiment) %>% 
+    select(-c(sentiment,method))
+)
+
+sentiments[is.na(sentiments)] <- 0
+
+sentiments_with_average <- sentiments %>% 
+  mutate(
+    average_sentiment = (afinn+bing+jockers+loughran+nrc)/5
+  )
+
+setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/4. Sentiment Analysis")
+write.csv(sentiments_with_average, "sentiments.csv", row.names = F)
+
+### GRAPH 1
+
+sentiments %>% 
+  pivot_longer(!c("Company","Year","page"),names_to="method",values_to="sentiment") %>% 
+  filter(Company == "KEPPEL CORPORATION LIMITED") %>% 
+  filter(Year == 2015) %>% 
+  ggplot(aes(x=page,y=sentiment,group=method)) +
+  geom_line(aes(color=method),size=0.65) +
+  geom_point(aes(color=method),alpha=0.1) +
+  theme_minimal() +
+  theme(legend.position="bottom") +
+  scale_fill_brewer(palette = "Pastel1")
+
+sentiments %>% 
+  mutate(
+    avg = (afinn+bing+jockers+loughran+nrc)/5,
+    max = pmax(afinn,bing,jockers,loughran,nrc),
+    min = pmin(afinn,bing,jockers,loughran,nrc)
+  ) %>% 
+  filter(Company == "KEPPEL CORPORATION LIMITED") %>% 
+  filter(Year == 2015) %>% 
+  ggplot(aes(x=page,y=avg)) +
+  geom_errorbar(aes(ymin=min,ymax=max),width=0.5,alpha=0.3, position=position_dodge(0.05)) +
+  geom_line() +
+  geom_point(aes(color=avg)) +
+  theme_minimal() +
+  theme(legend.position="none") +
+  labs(y = "average Sentiment score") +
+  scale_fill_brewer(palette = "RdYlGn")
+  
+### GRAPH 2
+
+read.csv("sentiments.csv") %>% 
+  mutate(
+    Year = as.character(Year)
+  ) %>% 
+  select(Company, Year, page, average_sentiment) %>% 
+  group_by(Company, Year) %>% 
+  summarise(average_sentiment = sum(average_sentiment)/ n_distinct(page)) %>% 
+  ggplot(aes(x=Year,y=average_sentiment)) +
+  geom_boxplot(aes(x=Year), fill = "grey", alpha = 0.2) +
+  geom_jitter(width = 0.1, alpha = 0.5) +
+  theme_minimal() +
+  ggtitle("Average Sentiment Score, adjusted for number of pages by Year") +
+  ylab("Average Sentiment Score") +
+  xlab("Disclosure for Year Ended In")
+  theme(legend.position="none") +
+  scale_fill_brewer(palette="Blues")

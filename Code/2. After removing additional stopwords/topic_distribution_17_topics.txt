@@ -1,0 +1,29 @@
+management employees health safety environmental      manager properties property tenants capital 
+                                      0.23787345                                       0.10449315 
+             covid climate pandemic data related            bank banking ocbc customers financing 
+                                      0.06169486                                       0.05751335 
+        cycle carriage governance mindset mental         company project water public development 
+                                      0.05648864                                       0.05611314 
+              board group risk directors company              land green portfolio central health 
+                                      0.05206854                                       0.05088876 
+           venture group digital customer mobile                    bus taxi transit safety buses 
+                                      0.04502057                                       0.04287036 
+           group land compliance marine offshore green statements construction assurance building 
+                                      0.04193728                                       0.03790438 
+           hospitality approach gri https hotels                team members guest genting guests 
+                                      0.03320499                                       0.03294019 
+   food resources connecting framework statement                 palm oil mills sugar plantations 
+                                      0.03216175                                       0.02940665 
+           connecting flight crew aircraft cabin 
+                                      0.02741993 
+
+
+ [1] "29 : manager properties property tenants capital"      "27 : management employees health safety environmental"
+ [3] "19 : cycle carriage governance mindset mental"         "15 : bank banking ocbc customers financing"           
+ [5] "13 : bus taxi transit safety buses"                    "12 : food resources connecting framework statement"   
+ [7] "11 : land green portfolio central health"              "9 : board group risk directors company"               
+ [9] "8 : company project water public development"          "8 : green statements construction assurance building" 
+[11] "7 : team members guest genting guests"                 "7 : group land compliance marine offshore"            
+[13] "7 : hospitality approach gri https hotels"             "7 : venture group digital customer mobile"            
+[15] "7 : covid climate pandemic data related"               "7 : palm oil mills sugar plantations"                 
+[17] "7 : connecting flight crew aircraft cabin"  

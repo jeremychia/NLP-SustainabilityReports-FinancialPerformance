@@ -76,4 +76,20 @@ setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/3. Readability")
 
 write.csv(text_df_with_flesch %>% select(Company, Year, flesch), "readability.csv",row.names = F)
 
+## GRAPH
+
+read.csv("readability.csv") %>% 
+  mutate(
+    Year = as.character(Year)
+  ) %>% 
+  ggplot(aes(x=Year,y=flesch)) +
+  geom_boxplot(aes(x=Year), fill = "grey", alpha = 0.2) +
+  geom_jitter(width = 0.1, alpha = 0.5) +
+  theme_minimal() +
+  ggtitle("Readability Ease by Year") +
+  ylab("Readability Ease") +
+  xlab("Disclosure for Year Ended In")
+  theme(legend.position="none") +
+  scale_fill_brewer(palette="Blues")
+
 

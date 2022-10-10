@@ -115,7 +115,12 @@ docs <- lemmatize_words(docs, dictionary = lexicon::hash_lemmas)
 minimumFrequency <- 10
 DTM <- DocumentTermMatrix(docs, control = list(bounds = list(global = c(minimumFrequency, Inf))))
 
-DTM <- DTM[apply(DTM,1,FUN=sum)!=0,]
+# store rows that are dropped
+index_nonzero <- apply(DTM,1,FUN=sum)!=0
+
+DTM <- DTM[index_nonzero,]
+
+
 
 # create models with different number of topics
 result <- ldatuning::FindTopicsNumber(
@@ -128,12 +133,12 @@ result <- ldatuning::FindTopicsNumber(
 )
 
 setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/2. After removing additional stopwords")
-write.csv(result,"metrics_v3.csv")
+write.csv(result,"metrics_v6.csv")
 
 FindTopicsNumber_plot(result)
 
 # number of topics
-K <- 11
+K <- 7
 # set random number generator seed
 set.seed(1234)
 # compute the LDA model, inference via 1000 iterations of Gibbs sampling
@@ -159,7 +164,7 @@ top_terms %>% # take the top terms
   coord_flip() # turn bars sideways
 
 
-write.csv(top_terms,"top_words_v3.csv",fileEncoding = "utf8")
+write.csv(top_terms,"top_words_v6_7topics.csv",fileEncoding = "utf8")
 
 ### FORM TOPICS
 
@@ -205,7 +210,7 @@ for (i in 1:K){
   mycolors <- brewer.pal(8, "Dark2")
   
   # Generate the Word Cloud
-  # setwd("C:/Users/Jeremy Chia/Documents/GitHub/NLP-SustainabilityReports-FinancialPerformance/Sustainability Reports or Annual Reports")
+  setwd("C:/Users/Jeremy Chia/Desktop/2022/Research/Code/2. After removing additional stopwords")
   png(paste(i,".png",sep=""), width=480,height=480)
   wordcloud(words, probabilities, random.order = FALSE, color = mycolors, rot.per=0)
   dev.off()
